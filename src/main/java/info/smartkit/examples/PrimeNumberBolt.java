@@ -23,7 +23,7 @@ public class PrimeNumberBolt extends BaseRichBolt {
     public void execute(Tuple tuple){
         int  number = tuple.getInteger(0);
         if(isPrime(number)){
-            System.out.print("Prime number:"+number);
+            System.out.println( number );
         }
         collector.ack(tuple);
     }

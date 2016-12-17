@@ -2,7 +2,6 @@ package info.smartkit.examples;
 
 import org.apache.storm.Config;
 import org.apache.storm.LocalCluster;
-import org.apache.storm.starter.bolt.PrinterBolt;
 import org.apache.storm.topology.TopologyBuilder;
 import org.apache.storm.utils.Utils;
 
@@ -15,7 +14,7 @@ public class PrimeNumberTopology {
     //
         TopologyBuilder builder = new TopologyBuilder();
         builder.setSpout("spout",new NumberSpout());
-        builder.setBolt("bolt",new PrinterBolt()).shuffleGrouping("spout");
+        builder.setBolt("bolt",new PrimeNumberBolt()).shuffleGrouping("spout");
 //
         Config config = new Config();
         LocalCluster localCluster = new LocalCluster();

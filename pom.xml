@@ -19,6 +19,7 @@
 	</parent>
 
 	<properties>
+		<start-class>info.smartkit.examples.PrimeNumberTopology</start-class>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
@@ -44,13 +45,6 @@
 		<dependency>
 			<groupId>org.apache.storm</groupId>
 			<artifactId>storm-core</artifactId>
-			<version>1.0.2</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.apache.storm/storm-starter -->
-		<dependency>
-			<groupId>org.apache.storm</groupId>
-			<artifactId>storm-starter</artifactId>
 			<version>1.0.2</version>
 		</dependency>
 
