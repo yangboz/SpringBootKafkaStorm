@@ -1,6 +1,5 @@
 package info.smartkit.examples;
 
-import org.apache.storm.shade.com.fasterxml.jackson.core.io.OutputDecorator;
 import org.apache.storm.spout.SpoutOutputCollector;
 import org.apache.storm.task.TopologyContext;
 import org.apache.storm.topology.OutputFieldsDeclarer;
@@ -10,6 +9,7 @@ import org.apache.storm.tuple.Values;
 
 import java.util.Map;
 
+
 /**
  * Created by smartkit on 2016/12/16.
  */
@@ -18,7 +18,7 @@ public class NumberSpout extends BaseRichSpout {
     private static int currentNumber = 1;
 
     @Override
-    public void open(Map conf, TopologyContext context,SpoutOutputCollector collector){
+    public void open(Map conf, TopologyContext context, SpoutOutputCollector collector){
         this.collector = collector;
     }
 
