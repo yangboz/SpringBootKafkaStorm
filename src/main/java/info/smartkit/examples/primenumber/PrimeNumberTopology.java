@@ -1,4 +1,4 @@
-package info.smartkit.examples;
+package info.smartkit.examples.primenumber;
 
 
 import org.apache.storm.Config;

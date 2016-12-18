@@ -1,4 +1,4 @@
-package info.smartkit.examples;
+package info.smartkit.examples.logger;
 
 import org.apache.log4j.Logger;
 import org.apache.storm.Config;
